@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>StudentProject</display-name>
+	<servlet>
+		<servlet-name>StudentLoginActionServlet</servlet-name>
+		<display-name>StudentLoginActionServlet</display-name>
+		<description></description>
+		<servlet-class>student.StudentLoginActionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ShowAllStudentsServlet</servlet-name>
+		<display-name>ShowAllStudentsServlet</display-name>
+		<description></description>
+		<servlet-class>student.ShowAllStudentsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ShowStudentServlet</servlet-name>
+		<display-name>ShowStudentServlet</display-name>
+		<description></description>
+		<servlet-class>student.ShowStudentServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>StudentLoginActionServlet</servlet-name>
+		<url-pattern>/StudentLoginAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowAllStudentsServlet</servlet-name>
+		<url-pattern>/ShowAllStudents</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowStudentServlet</servlet-name>
+		<url-pattern>/ShowStudent</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
